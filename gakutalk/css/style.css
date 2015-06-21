@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #57d4f8;
+}
+.wrapper{
+    width: 950px;
+}
+
+
+/*header*/
+header{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+nav{
+    width: 200px;
+    height: 300px;
+}
+nav > ul > li{
+    height: 60px;
+    list-style: none;
+}
+nav > ul > li > a{
+    text-align: center;
+}
