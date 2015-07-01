@@ -1,11 +1,20 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 *{
     box-sizing: border-box;
+    border: 0ppx;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Noto Sans Japanese' sans-serif;
 }
 body{
-    background-color: #57d4f8;
+/*    background-color: #57d4f8;*/
+    background-image: url(../images/back.jpg);
+    background-repeat: repeat;
 }
 .wrapper{
     width: 950px;
+    margin: 0 auto;
 }
 
 
@@ -15,19 +24,203 @@ header{
     height: 100%;
     position: fixed;
     background-color: white;
+    text-align: center;
 }
 .logo{
     width: 200px;
     height: 200px;
+/*    background-color: red;*/
+    margin-bottom: 30px;
 }
 nav{
     width: 200px;
-    height: 300px;
+    height: 30%;
+/*    background-color: blue;*/
+    margin-bottom: 30px;
+}
+nav > ul{
+    width: 200px;
+    height: 100%;
 }
 nav > ul > li{
-    height: 60px;
+    height: 20%;
+    display: block;
     list-style: none;
 }
 nav > ul > li > a{
     text-align: center;
+}
+.share{
+    width: 200px;
+    height: 40%;
+}
+.share > ul{
+    display: block;
+    width: 140px;
+    height: 10%;
+    margin: 0 auto;
+}
+.share > ul > li{
+    list-style: none;
+    float: left;
+}
+.share a{
+    display: block;
+    width: 30px;
+}
+.share a > img{
+    width: 20px;
+    height: 20px;
+}
+
+/*main*/
+.main{
+    width: 750px;
+    margin-left: 200px;
+    background-color: white;
+}
+.top{
+    height: 350px;
+    width: 750px;
+}
+/*
+.rainbow{
+    height: 15px;
+    width: 750px;
+    background-image: url(../images/rainbow.jpg);
+    background-size: cover;
+}
+*/
+.hero{
+    width: 750px;
+    height: 350px;
+    background-image: url(../images/hero.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.middle{
+    width: 750px;
+}
+.main_message{
+    width: 500px;
+    height: 100px;
+    float: left;
+    background-color: #c0e5f5;
+    padding: 20px 50px;
+}
+.message{
+    width: 250px;
+    height: 100px;
+    float: left;
+    background-color: white;
+    padding: 20px 50px;
+    text-align: right;
+}
+.big{
+    font-size: 30px;
+}
+.contents{
+    width: 750px;
+    overflow: hidden;
+}
+.content{
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+.co1{
+    background-color: #c0dfbb;
+}
+.co2{
+    background-color: #fbdead;
+}
+.co3{
+    background-color: #f7f7c9;
+}
+
+.member-box{
+    width: 750px;
+    height: 300px;
+}
+.members{
+    width: 500px;
+    height:300;
+    z-index: 5;
+    position: relative;
+    float: left;
+}
+.fukidashi{
+    position: absolute;
+    z-index: 10;   
+}
+.fukidashi:hover{
+    cursor: pointer;
+    animation: shake 1s linear infinite;
+}
+@keyframes shake {
+    50% { transform: translate(0px, -5px) scale(1.4);}
+    100% { transform: translate(0px, 0px) scale(1.0); }
+}
+.fu1{
+    top: 150px;
+    left: 305px;
+}
+.fu2
+{
+    top: 60px;
+    left: 310px;
+}
+.fu3{
+    top: 67px;
+    left: 424px;
+}
+.member{
+    width: 250px;
+    height: 300px;
+    background-color: #ea158f;
+    float: left;
+    padding: 10px;
+    display: none;
+}
+.member > img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-bottom: 20px;
+}
+.member > .name{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+.bottom{
+    width: 750px;
+    height: 400px;
+}
+.detail{
+    width: 375px;
+    height: 400px;
+    background-color: #c0e5f5;
+    float: left;
+    padding: 30px 20px;
+}
+.form{
+    width: 375px;
+    height: 400px;
+    background-color: white;
+    float: left;
+}
+
+
+/*footer*/
+footer{
+    width: 750px;
+    height: 50px;
+    background-color: #ea158f;
+    padding: 5px 100px;
 }
