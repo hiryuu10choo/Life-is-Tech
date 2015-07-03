@@ -25,12 +25,17 @@ header{
     position: fixed;
     background-color: white;
     text-align: center;
+    color: #09a318;
 }
 .logo{
     width: 200px;
     height: 200px;
 /*    background-color: red;*/
-    margin-bottom: 30px;
+    overflow: hidden;
+}
+.logo > img{
+    width: 200px;
+    height: 200px;
 }
 nav{
     width: 200px;
@@ -49,6 +54,17 @@ nav > ul > li{
 }
 nav > ul > li > a{
     text-align: center;
+    color: #09a318;
+    transition: 0.3s;
+    padding: 1px 15px; 
+}
+nav > ul > li > a:hover{
+    color: white;
+    background-color: #09a318;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .share{
     width: 200px;
@@ -63,6 +79,7 @@ nav > ul > li > a{
 .share > ul > li{
     list-style: none;
     float: left;
+    color: #09a318
 }
 .share a{
     display: block;
@@ -79,26 +96,59 @@ nav > ul > li > a{
     margin-left: 200px;
     background-color: white;
 }
-.top{
-    height: 350px;
+#top{
+    height: 500px;
     width: 750px;
+    position: relative;
 }
-/*
-.rainbow{
-    height: 15px;
+.HERO{
     width: 750px;
-    background-image: url(../images/rainbow.jpg);
-    background-size: cover;
-}
-*/
-.hero{
-    width: 750px;
-    height: 350px;
-    background-image: url(../images/hero.jpg);
+    height: 500px;
+    background-image: url(../images/hero1.jpg);
     background-position: center center;
     background-size: cover;
+    display: none;
 }
-
+.HE1{background-image: url(../images/hero1.jpg);}
+.HE2{background-image: url(../images/hero2.jpg);}
+.HE3{background-image: url(../images/hero3.jpg);}
+.HE4{background-image: url(../images/hero4.jpg);}
+.hero{
+    width: 120px;
+    height: 80px;
+    background-position: center center;
+    background-size: cover;
+    border: white 5px solid;
+    position: absolute;
+    bottom: 20px;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+}
+.mask:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+.he1{
+    background-image: url(../images/hero1.jpg);
+    right: 470px;
+}
+.he2{
+    background-image: url(../images/hero2.jpg);
+    right: 320px;
+}
+.he3{
+    background-image: url(../images/hero3.jpg);
+    right: 170px;
+}
+.he4{
+    background-image: url(../images/hero4.jpg);
+    right: 20px;
+}
+    
 .middle{
     width: 750px;
 }
@@ -106,15 +156,18 @@ nav > ul > li > a{
     width: 500px;
     height: 100px;
     float: left;
-    background-color: #c0e5f5;
-    padding: 20px 50px;
+    background-color: #09a318;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 50px;
 }
 .message{
     width: 250px;
     height: 100px;
     float: left;
     background-color: white;
-    padding: 20px 50px;
+    padding: 25px 30px;
     text-align: right;
 }
 .big{
@@ -130,13 +183,13 @@ nav > ul > li > a{
     float: left;
 }
 .co1{
-    background-color: #c0dfbb;
+    background-color: #ebf2aa;
 }
 .co2{
-    background-color: #fbdead;
+    background-color: #96e0e0;
 }
 .co3{
-    background-color: #f7f7c9;
+    background-color: #c5d817;
 }
 
 .member-box{
@@ -205,7 +258,7 @@ nav > ul > li > a{
 .detail{
     width: 375px;
     height: 400px;
-    background-color: #c0e5f5;
+    background-color: #09a318;
     float: left;
     padding: 30px 20px;
 }
