@@ -16,6 +16,7 @@ body{
     width: 950px;
     margin: 0 auto;
 }
+.strong{font-weight: bold;}
 
 
 /*header*/
@@ -61,10 +62,12 @@ nav > ul > li > a{
 nav > ul > li > a:hover{
     color: white;
     background-color: #09a318;
+/*
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+*/
 }
 .share{
     width: 200px;
@@ -97,7 +100,7 @@ nav > ul > li > a:hover{
     background-color: white;
 }
 #top{
-    height: 500px;
+    overflow: auto;
     width: 750px;
     position: relative;
 }
@@ -151,6 +154,7 @@ nav > ul > li > a:hover{
     
 .middle{
     width: 750px;
+    overflow: auto;
 }
 .main_message{
     width: 500px;
@@ -160,19 +164,51 @@ nav > ul > li > a:hover{
     font-size: 24px;
     font-weight: bold;
     color: white;
-    padding: 15px 50px;
+    padding: 15px 30px;
 }
 .message{
     width: 250px;
     height: 100px;
     float: left;
     background-color: white;
-    padding: 25px 30px;
+    padding: 15px 30px;
     text-align: right;
+    font-size: 18px;
 }
-.big{
+.date{
     font-size: 30px;
+    font-weight: bold;
 }
+
+#about{
+    width: 750px;
+    overflow: auto;
+    background-color: #C9F0CE;
+    padding-bottom: 30px;
+}
+.title{
+    width: 750px;
+    overflow: auto;
+}
+.title > h2{
+    border-bottom: 10px solid #932674;
+    text-align: center;
+    width: 400px;
+    font-size: 30px;
+    margin: 20px 175px 50px 175px;
+}
+.intro{text-align: center;}
+.ab-box{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    float: left;
+    padding: 10px;
+}
+
+/*
 .contents{
     width: 750px;
     overflow: hidden;
@@ -182,67 +218,81 @@ nav > ul > li > a:hover{
     height: 250px;
     float: left;
 }
-.co1{
-    background-color: #ebf2aa;
-}
-.co2{
-    background-color: #96e0e0;
-}
-.co3{
-    background-color: #c5d817;
-}
+.co1{background-color: #96e0e0;}
+.co2{background-color: #ebf2aa;}
+.co3{background-color: #9ae0a1;}
+.co4{background-color: #c8f0f0;}
+.co5{background-color: #c5d817;}
+*/
 
-.member-box{
+/*member*/
+#member{
     width: 750px;
-    height: 300px;
+    height: 600px;
+    background-color: #C5D817;
+}
+.picture{
+    width: 700px;
+    height:400px;
+    margin: 0 auto;
+    position: relative;
 }
 .members{
-    width: 500px;
-    height:300;
-    z-index: 5;
-    position: relative;
-    float: left;
+    z-index: 10;
 }
-.fukidashi{
+.mozaiku{
+    z-index: 20;
     position: absolute;
-    z-index: 10;   
+    top: 0px;
+    left: 0px;
+    opacity: 0;
 }
-.fukidashi:hover{
-    cursor: pointer;
-    animation: shake 1s linear infinite;
+.me{
+    z-index: 30;
+    position: absolute;
 }
+.me:hover{cursor: pointer;}
+.fu{
+    z-index: 40;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+/*
+animation: shake 5s linear infinite;
 @keyframes shake {
     50% { transform: translate(0px, -5px) scale(1.4);}
     100% { transform: translate(0px, 0px) scale(1.0); }
 }
-.fu1{
-    top: 150px;
-    left: 305px;
-}
-.fu2
-{
-    top: 60px;
-    left: 310px;
-}
-.fu3{
-    top: 67px;
-    left: 424px;
-}
-.member{
-    width: 250px;
-    height: 300px;
-    background-color: #ea158f;
-    float: left;
-    padding: 10px;
+*/
+.me1{top: 205px; left: 396px;}
+.me2{top: 84px; left: 408px;}
+.me3{top: 91px; left: 569px;}
+.fu1{top: 182px; left: 421px;}
+.fu2{top: 62px; left: 428px;}
+.fu3{top: 66px; left: 599px;}
+.per{
+    width: 350px;
+    height: 250px;
+    padding: 25px 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid #932674;
+    border-radius: 20px;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    z-index: 25;
+    color: rgba(0, 0, 0, 1);
     display: none;
 }
-.member > img{
+.per:hover{cursor: pointer;}
+.per > img{
     width: 100px;
     height: 100px;
     float: left;
     margin-bottom: 20px;
 }
-.member > .name{
+.per > .name{
     width: 100px;
     height: 100px;
     float: left;
@@ -251,29 +301,39 @@ nav > ul > li > a:hover{
 }
 
 
-.bottom{
+#contact{
     width: 750px;
-    height: 400px;
+    overflow: auto;
 }
 .detail{
     width: 375px;
-    height: 400px;
+    height: 310px;
     background-color: #09a318;
+    color: white;
+    font-size: 15px;
     float: left;
-    padding: 30px 20px;
+    padding: 100px 50px;
+}
+.detail > ul > li{
+    list-style: none;
+}
+.detail > ul > li > a{
+    color: white;
+    text-decoration: underline;
 }
 .form{
     width: 375px;
-    height: 400px;
+    overflow: auto;
     background-color: white;
     float: left;
 }
 
 
 /*footer*/
+/*
 footer{
     width: 750px;
     height: 50px;
     background-color: #ea158f;
     padding: 5px 100px;
-}
+}*/
